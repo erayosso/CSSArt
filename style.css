@@ -94,3 +94,85 @@ body {
 }
 
 
+
+
+.Kugel1 {
+    position: fixed;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 5%;
+    z-index: 7;
+    left: 48%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    background: red;
+    box-shadow:
+    0 0 5px 5px white,
+    0 0 5px 5px red,
+    0 0 5px 5px red;
+}
+
+.Kugel2 {
+    position: fixed;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 7;
+    left: 52%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+    background: blue;
+    box-shadow:
+    0 0 5px 5px white,
+    0 0 5px 5px blue,
+    0 0 5px 5px blue;
+}
+
+.Kugel3 {
+    position: fixed;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 7;
+    left: 46%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    background: green;
+    box-shadow:
+    0 0 5px 5px white,
+    0 0 5px 5px green,
+    0 0 5px 5px green;
+}
+
+.Kugel4 {
+    position: fixed;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 7;
+    left: 54%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    background: yellow;
+    box-shadow:
+    0 0 5px 5px white,
+    0 0 5px 5px yellow,
+    0 0 5px 5px yellow;
+}
+
+.Kugel5 {
+    position: fixed;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 7;
+    left: 45%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+    background: purple;
+    box-shadow:
+    0 0 5px 5px white,
+    0 0 5px 5px purple,
+    0 0 5px 5px purple;
+}
