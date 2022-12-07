@@ -1,8 +1,26 @@
 body {
     background-color: blue;
+    font-family: cursive;
 }
-.baum{
 
+.MC {
+    font-size: 80px;
+    color: white;
+     position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: scheinen 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes scheinen {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 50px blue, 0 0 70px red, 0 0 90px green, 0 0 110px yellow, 0 0 130px purple;
+  }
+
+  to {
+    text-shadow: 0 0 30px #fff, 0 0 50px blue, 0 0 70px red, 0 0 90px green, 0 0 110px yellow, 0 0 130px purple, 0 0 150px white;
+  }
 }
 
 
@@ -92,8 +110,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
+.stern {
+    position: fixed;
+    width: 60px;
+    height: 50px;
+    background: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+    box-shadow:
+    0 0 50px 50px white,
+    0 0 50px 50px red,
+    0 0 50px 50px red;
+}
 
 
 .Kugel1 {
@@ -101,7 +132,6 @@ body {
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    line-height: 5%;
     z-index: 7;
     left: 48%;
     top: 30%;
