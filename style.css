@@ -57,7 +57,7 @@ a:active {
 }
 
 
-.baum-layer1 {
+.baum-dreieck1 {
     width: 0;
     height: 0;
     border-left: 80px solid transparent;
@@ -70,7 +70,7 @@ a:active {
     z-index: 6;
 
 }
-.baum-layer2 {
+.baum-dreieck2 {
     width: 0;
     height: 0;
     border-left: 100px solid transparent;
@@ -83,7 +83,7 @@ a:active {
     z-index: 5;
 
 }
-.baum-layer3 {
+.baum-dreieck3 {
     width: 0;
     height: 0;
     border-left: 120px solid transparent;
@@ -96,7 +96,7 @@ a:active {
     z-index: 4;
 }
 
-.baum-layer4 {
+.baum-dreieck4 {
     width: 0;
     height: 0;
     border-left: 140px solid transparent;
@@ -108,7 +108,7 @@ a:active {
     transform: translate(-50%, -50%);
     z-index: 3;
 }
-.baum-layer5 {
+.baum-dreieck5 {
     width: 0;
     height: 0;
     border-left: 160px solid transparent;
@@ -120,7 +120,7 @@ a:active {
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-.baum-layer6 {
+.baum-dreieck6 {
     width: 0;
     height: 0;
     border-left: 180px solid transparent;
@@ -135,7 +135,7 @@ a:active {
 
 
 .baumstamm {
-    width: 3%;
+    width: 5%;
     height: 15%;
     background: #66503e;
     position: fixed;
