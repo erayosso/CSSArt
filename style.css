@@ -7,8 +7,8 @@ body {
 /*Styling der Postkarte*/
 .postkarte {
     position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
-    width: 650px; /* Breite des Elements*/
-    height: 800px; /*Höhe des Elements*/
+    width: 42%; /* Breite des Elements*/
+    height: 95%; /*Höhe des Elements*/
     /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
     top: 50%;
     left: 50%;
@@ -16,15 +16,18 @@ body {
     background: darkred; /*Einstellen der Farbe*/
     border-radius: 10px;
     z-index: 10; /*Z-Index bestimmt welches Element welches überlappt*/
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
 }
 
 
 .MC {
     position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
-    font-size: 80px; /*Größe der Schrift*/
+    font-size: 275%; /*Größe der Schrift*/
     color: white; /*Einstellen der Farbe*/
     /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
-    top: 5%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     /*Bestimmen,welche Attribute der Scheineffekt für den Text hat,Name ScheinEffekt, Dauer 2s, Timing ease-in-out, wiederhole unendlich oft und in richtung alternate-reverse*/
