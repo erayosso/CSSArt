@@ -3,6 +3,15 @@ body {
     background-color: red;
     font-family: cursive;
 }
+/*Platziere Screenreader Text außerhalb des Sichtbereiches*/
+.SR {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
 
 /*Styling der Postkarte*/
 .postkarte {
