@@ -1,0 +1,285 @@
+/* Hintergrundfarbe der gesamten Seite auf Rot und Text für Merry Christmas auf kursiv gesetzt */
+body {
+    background-color: red;
+    font-family: cursive;
+}
+/*Platziere Screenreader Text außerhalb des Sichtbereiches*/
+.SR {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+/*Styling der Postkarte*/
+.postkarte {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    width: 42%; /* Breite des Elements*/
+    height: 95%; /*Höhe des Elements*/
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: darkred; /*Einstellen der Farbe*/
+    border-radius: 10px;
+    z-index: 10; /*Z-Index bestimmt welches Element welches überlappt*/
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+}
+
+
+.MC {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    font-size: 275%; /*Größe der Schrift*/
+    color: white; /*Einstellen der Farbe*/
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*Bestimmen,welche Attribute der Scheineffekt für den Text hat,Name ScheinEffekt, Dauer 2s, Timing ease-in-out, wiederhole unendlich oft und in richtung alternate-reverse*/
+    animation: ScheinEffekt 2s ease-in-out infinite alternate-reverse;
+    z-index: 11; /*Z-Index bestimmt welches Element welches überlappt*/
+}
+
+/*Der ScheinEffekt geht von from{} nach to{} mit den gegebenen Attributen*/
+@-webkit-keyframes ScheinEffekt {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 50px blue, 0 0 70px red, 0 0 90px green, 0 0 110px yellow, 0 0 130px purple;
+    }
+
+    to {
+        text-shadow: 0 0 30px #fff, 0 0 50px blue, 0 0 70px red, 0 0 90px green, 0 0 110px yellow, 0 0 130px purple, 0 0 150px white;
+    }
+}
+
+/*Anpassung der Link Attribute, sodass Unterstrich entfernt wird und sich nichts ändert falls man draufklickt*/
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+
+.baum-dreieck1 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    /*Indem wir die Breite und Höhe des Elements auf null stellen und die Borders bearbeiten, erstellen wir Border Triangles*/
+    width: 0; /* Breite des Elements*/
+    height: 0; /*Höhe des Elements*/
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid #046944;
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6; /*Z-Index bestimmt welches Element welches überlappt*/
+
+}
+
+.baum-dreieck2 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    /*Indem wir die Breite und Höhe des Elements auf null stellen und die Borders bearbeiten, erstellen wir Border Triangles*/
+    width: 0; /* Breite des Elements*/
+    height: 0; /*Höhe des Elements*/
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #038052;
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5; /*Z-Index bestimmt welches Element welches überlappt*/
+
+}
+
+.baum-dreieck3 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    /*Indem wir die Breite und Höhe des Elements auf null stellen und die Borders bearbeiten, erstellen wir Border Triangles*/
+    width: 0; /* Breite des Elements*/
+    height: 0; /*Höhe des Elements*/
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 120px solid #046944;
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4; /*Z-Index bestimmt welches Element welches überlappt*/
+}
+
+.baum-dreieck4 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    /*Indem wir die Breite und Höhe des Elements auf null stellen und die Borders bearbeiten, erstellen wir Border Triangles*/
+    width: 0; /* Breite des Elements*/
+    height: 0; /*Höhe des Elements*/
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 140px solid #038052;
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /*Z-Index bestimmt welches Element welches überlappt*/
+}
+
+.baum-dreieck5 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    /*Indem wir die Breite und Höhe des Elements auf null stellen und die Borders bearbeiten, erstellen wir Border Triangles*/
+    width: 0; /* Breite des Elements*/
+    height: 0; /*Höhe des Elements*/
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 160px solid #046944;
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /*Z-Index bestimmt welches Element welches überlappt*/
+}
+
+.baum-dreieck6 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    /*Indem wir die Breite und Höhe des Elements auf null stellen und die Borders bearbeiten, erstellen wir Border Triangles*/
+    width: 0; /* Breite des Elements*/
+    height: 0; /*Höhe des Elements*/
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 180px solid #038052;
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /*Z-Index bestimmt welches Element welches überlappt*/
+}
+
+
+.baumstamm {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    width: 5%; /* Breite des Elements*/
+    height: 15%; /*Höhe des Elements*/
+    background: #66503e; /*Einstellen der Farbe*/
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    top: 72.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stern {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    width: 60px; /* Breite des Elements*/
+    height: 50px; /*Höhe des Elements*/
+    background: yellow; /*Einstellen der Farbe*/
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8; /*Z-Index bestimmt welches Element welches überlappt*/
+    /*Mit box-shadow erstellen wir den Shine Effekt für die Kugel*/
+    box-shadow: 0 0 50px 50px white,
+    0 0 50px 50px red,
+    0 0 50px 50px red;
+}
+
+
+.Kugel1 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    width: 30px; /* Breite des Elements*/
+    height: 30px; /*Höhe des Elements*/
+    border-radius: 50%; /*border-radius um Kugel zu erstellen*/
+    z-index: 7; /*Z-Index bestimmt welches Element welches überlappt*/
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    left: 48%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background: red; /*Einstellen der Farbe*/
+    /*Mit box-shadow erstellen wir den Shine Effekt für die Kugel*/
+    box-shadow: 0 0 5px 5px white,
+    0 0 5px 5px red,
+    0 0 5px 5px red;
+}
+
+.Kugel2 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    width: 30px; /* Breite des Elements*/
+    height: 30px; /*Höhe des Elements*/
+    border-radius: 50%; /*border-radius um Kugel zu erstellen*/
+    z-index: 7; /*Z-Index bestimmt welches Element welches überlappt*/
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    left: 52%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    background: blue; /*Einstellen der Farbe*/
+    /*Mit box-shadow erstellen wir den Shine Effekt für die Kugel*/
+    box-shadow: 0 0 5px 5px white,
+    0 0 5px 5px blue,
+    0 0 5px 5px blue;
+}
+
+.Kugel3 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    width: 30px; /* Breite des Elements*/
+    height: 30px; /*Höhe des Elements*/
+    border-radius: 50%; /*border-radius um Kugel zu erstellen*/
+    z-index: 7; /*Z-Index bestimmt welches Element welches überlappt*/
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    left: 46%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    background: green; /*Einstellen der Farbe*/
+    /*Mit box-shadow erstellen wir den Shine Effekt für die Kugel*/
+    box-shadow: 0 0 5px 5px white,
+    0 0 5px 5px green,
+    0 0 5px 5px green;
+}
+
+.Kugel4 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    width: 30px; /* Breite des Elements*/
+    height: 30px; /*Höhe des Elements*/
+    border-radius: 50%; /*border-radius um Kugel zu erstellen*/
+    z-index: 7; /*Z-Index bestimmt welches Element welches überlappt*/
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    left: 54%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    background: yellow; /*Einstellen der Farbe*/
+    /*Mit box-shadow erstellen wir den Shine Effekt für die Kugel*/
+    box-shadow: 0 0 5px 5px white,
+    0 0 5px 5px yellow,
+    0 0 5px 5px yellow;
+}
+
+.Kugel5 {
+    position: fixed; /*Behalte Position auch wenn Seite gescrolled wird*/
+    width: 30px; /* Breite des Elements*/
+    border-radius: 50%; /*border-radius um Kugel zu erstellen*/
+    height: 30px; /*Höhe des Elements*/
+    z-index: 7; /*Z-Index bestimmt welches Element welches überlappt*/
+    /*Folgenden drei Befehle sind zum zentrieren des Elements und Anpassung der Höhe*/
+    left: 45%;
+    top: 64%;
+    transform: translate(-50%, -50%);
+    background: purple; /*Einstellen der Farbe*/
+    /*Mit box-shadow erstellen wir den Shine Effekt für die Kugel*/
+    box-shadow: 0 0 5px 5px white,
+    0 0 5px 5px purple,
+    0 0 5px 5px purple;
+}
