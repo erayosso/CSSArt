@@ -124,8 +124,8 @@ h1:hover {
 
 /*Gestalltet den QR-Code*/
 .qr img {
-  width: 5vw; /*Breite in ABhängigkeit vom viewpoint*/
-  height: 5vw; /*Höhe in ABhängigkeit vom viewpoint*/
+  width: 4vw; /*Breite in ABhängigkeit vom viewpoint*/
+  height: 4vw; /*Höhe in ABhängigkeit vom viewpoint*/
 }
 
 /*Gestalltet das Bild*/
