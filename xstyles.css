@@ -1,10 +1,12 @@
+/*Abschnitt der das Dokumt und den Körper der Seite gestalltet*/
 html,body {
-  background-color: darkred;
+  background-color: darkred; /*Hintergrundfarbe der gesammten Seite*/
   
-  height: 98%;
-  padding: 0.1%;
+  height: 98%; /*Höhe der Seite in Prozent*/
+  padding: 0.1%; /*Der Platz zwischen Inhalt und Rand der Seite*/
 }
 
+/*Abschnitt der das Grid-Layout der Seite gestalltet*/
 .grid-container {
   display: grid; 
 
@@ -13,122 +15,127 @@ html,body {
   
   gap: 10px;
   height: 99.9%;
-
-
 }
- 
+
+/*Abschnitt der den Containers, der die Überschrift enthällt, gestalltet*/
 #item-0 {
-  background-color: #146B3A; 
-  grid-row-start: 1;
-  grid-column-start: 1;
+  background-color: #146B3A; /*Hintergrundfarbe des Containers*/
+  grid-row-start: 1; /*Container zieht sich vom 1. Grid der Reihe bis...*/
+  grid-column-start: 1; /*Container zieht sich vom 1. Grid der Spalte bis...*/
 
-  grid-row-end: 2;
-  grid-column-end: 6;
+  grid-row-end: 2; /*...zum 2. Grid der Reihe*/
+  grid-column-end: 6;/*...zum 6. Grid der Spalte*/
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /*Darstellungstyp flex: Elemente richten sich automatisch aus*/
+  justify-content: center; /*Für die zentrale Ausrichtung zuständig*/
+  align-items: center; /*Für die zentrale Ausrichtung zuständig*/
 
-  font-size: 2vw;
-  font-family: cursive;
-  font-weight: bolder;
-
-  font-family: 'Gambetta', serif;
-  letter-spacing: -3px;
-  transition: 700ms ease;
-  font-variation-settings: "wght" 311;
-  color: PaleGoldenRod;
-  outline: none;
-  text-shadow:1px 1px 10px rgb(244, 239, 193), 1px 1px 10px #ccc;
+  font-size: 2vw; /*Schriftgröße in abhängigkeit von viewport width*/
+  font-weight: bolder; /*Macht die Schrift fett*/
+  font-family: 'Gambetta', serif; /*Schriftart in Gambetta mit Serifen ändern*/
+  letter-spacing: -3px;/*Horizontaler Abstand zwischen den Buchstaben*/
+  transition: 700ms ease; /*Transitions Effekt für die Überschrift*/
+  font-variation-settings: "wght" 311; /*Schrift Variationseingstellungen für hovereffekt*/
+  color: PaleGoldenRod; /*Farbe der Schrift*/
+  text-shadow:1px 1px 10px rgb(244, 239, 193), 1px 1px 10px #ccc; /*Leuchteffekt der Schrift*/
 }
 
-#item-1 {
-  background-color: white; 
-  grid-row-start: 1;
-  grid-column-start: 6;
-
-  grid-row-end: 2;
-  grid-column-end: 7;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*Gestallt die Überschrift "MERRY CHRISTMAS!"*/
+.ueberschrift {
+  width: 100%; /*Breite der Überschrift*/
+  height: 100vh; /*Höhe der Schrift in Abhängigkeit des viewpoints*/
+  display: flex; /*Darstellungstyp flex: Elemente richten sich automatisch aus*/
+  flex-direction: column; /*Flexrichtung in richtung der Spalten*/
+  justify-content: center;/*zentrale ausrichtung der Schrift*/
+  align-items: center;/*zentrale ausrichtung der Schrift*/
 }
 
-#item-2 {
-  background-color: #F8B229; 
-  grid-row-start: 2;
-  grid-column-start: 1;
-
-  grid-row-end: 3;
-  grid-column-end: 3;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#item-3 {
-  background-color: #EA4630; 
-  grid-row-start: 2;
-  grid-column-start: 3;
-
-  grid-row-end: 3;
-  grid-column-end: 5;
-
-  padding: 10%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 2vw;
-  font-family: 'Gambetta', serif;
-  font-weight: bolder;
-  text-align: center;
-  line-height: 200%;
-  color: PaleGoldenRod;
-  letter-spacing: .5px;
-}
-
-#item-4 {
-  background-color: #BB2528;
-  grid-row-start: 2;
-  grid-column-start: 5;
-
-  grid-row-end: 3;
-  grid-column-end: 7;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.qr img {
-  width: 4vw;
-  height: 4vw;
-}
-
-.gift img {
-  width: 15vw;
-  height: 15vw;
-}
-
-.video iframe {
-  width: 30vw;
-  height: 18vw;
-}
-
-.container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
+/*Hover Animation der Überschrift*/
 h1:hover {
-  font-variation-settings: "wght" 582; 
-  letter-spacing: 1px;
+  font-variation-settings: "wght" 582; /*Animation der Überschrift*/
+  letter-spacing: 1px; /*Abstand der Buchstabe nach der Animation*/
+}
+
+/*Gestalltet den Container, der den QR Code enthällt*/
+#item-1 {
+  background-color: white; /*Hintergrundfarbe*/
+  grid-row-start: 1; /*Container zieht sich vom 1. Grid der Reihe bis...*/
+  grid-column-start: 6; /*Container zieht sich vom 6. Grid der Spalte bis...*/
+
+  grid-row-end: 2; /*...zum 2. Grid der Reihe*/
+  grid-column-end: 7;/*...zum 7. Grid der Spalte*/
+
+  display: flex; /*Darstellungstyp flex: Elemente richten sich automatisch aus*/
+  justify-content: center; /*Für die zentrale Ausrichtung zuständig*/
+  align-items: center; /*Für die zentrale Ausrichtung zuständig*/
+}
+
+/*Gestalltet den Container, der das Bild enthällt*/
+#item-2 {
+  background-color: #F8B229; /*Hintergrundfarbe*/
+  grid-row-start: 2; /*Container zieht sich vom 2. Grid der Reihe bis...*/
+  grid-column-start: 1;/*Container zieht sich vom 1. Grid der Spalte bis...*/
+
+  grid-row-end: 3; /*...zum 3. Grid der Reihe*/
+  grid-column-end: 3; /*...zum 3. Grid der Spalte*/
+
+  display: flex; /*Darstellungstyp flex: Elemente richten sich automatisch aus*/
+  justify-content: center; /*Für die zentrale Ausrichtung zuständig*/
+  align-items: center; /*Für die zentrale Ausrichtung zuständig*/
+}
+
+/*Gestalltet den Container, der den weihnachtlichen Text enthältl*/
+#item-3 {
+  background-color: #EA4630; /*Hintergrundfarbe*/
+  grid-row-start: 2; /*Container zieht sich vom 2. Grid der Reihe bis...*/
+  grid-column-start: 3; /*Container zieht sich vom 3. Grid der Spalte bis...*/
+
+  grid-row-end: 3; /*...zum 3. Grid der Reihe*/
+  grid-column-end: 5; /*...zum 5. Grid der Spalte*/
+
+  padding: 10%; /*Platz zwischen Rand und Content des Containers*/
+
+  display: flex; /*Darstellungstyp flex: Elemente richten sich automatisch aus*/
+  justify-content: center; /*Für die zentrale Ausrichtung zuständig*/
+  align-items: center; /*Für die zentrale Ausrichtung zuständig*/
+
+  font-size: 2vw; /*Schriftgröße in ABhängigkeit des Viewpoints*/
+  font-family: 'Gambetta', serif; /*Ändert Schrift in Gambette mit Serifen*/
+  font-weight: bolder; /*Macht die Schrift fett*/
+  text-align: center; /*Richtet den Text mittig aus*/
+  line-height: 200%; /*Zeilenhöhe des Textes*/
+  color: PaleGoldenRod; /*Farbe des Textes*/
+  letter-spacing: .5px; /*Horizontaler Abstand zwischen den Buchstaben*/
+}
+
+/*Gestalltet den Container, der das eingebetete Video enthällt*/
+#item-4 {
+  background-color: #BB2528; /*Hintergrundfarbe*/
+  grid-row-start: 2; /*Container zieht sich vom 2. Grid der Reihe bis...*/
+  grid-column-start: 5; /*Container zieht sich vom 5. Grid der Spalte bis...*/
+
+  grid-row-end: 3; /*...zum 3. Grid der Reihe*/
+  grid-column-end: 7; /*...zum 7. Grid der Spalte*/
+
+  display: flex; /*Darstellungstyp flex: Elemente richten sich automatisch aus*/
+  justify-content: center; /*Für die zentrale Ausrichtung zuständig*/
+  align-items: center; /*Für die zentrale Ausrichtung zuständig*/
+}
+
+/*Gestalltet den QR-Code*/
+.qr img {
+  width: 5vw; /*Breite in ABhängigkeit vom viewpoint*/
+  height: 5vw; /*Höhe in ABhängigkeit vom viewpoint*/
+}
+
+/*Gestalltet das Bild*/
+.gift img {
+  width: 15vw; /*Breite in ABhängigkeit vom viewpoint*/
+  height: 15vw; /*Höhe in ABhängigkeit vom viewpoint*/
+}
+
+/*Gestalltet das eingebettete YouTube-Video*/
+.video iframe {
+  width: 30vw; /*Breite in ABhängigkeit vom viewpoint*/
+  height: 18vw; /*Höhe in ABhängigkeit vom viewpoint*/
 }
